@@ -24,17 +24,17 @@ https://github.com/user-attachments/assets/32f4d57f-5a2d-4c55-a09e-de479ab7d7e9
 ---
 
 ## 📂 Project Structure
-`eslint.config.js`            # ESLint configuration for code quality and React hooks
-`index.html`                  # HTML entry point with meta, Launchar SDK script, and root div
-`package.json`                # Dependencies (R3F, Rapier, XR, stdlib gammaln) and scripts
+`eslint.config.js`            # ESLint configuration for code quality and React hooks <br>
+`index.html`                  # HTML entry point with meta, Launchar SDK script, and root div<br>
+`package.json`                # Dependencies (R3F, Rapier, XR, stdlib gammaln) and scripts<br>
 `package-lock.json`           # Locked dependency versions
 
-`main.jsx`                # React entry: renders <App /> with StrictMode
-`index.css`               # Global styles for layout and dark theme
-`App.jsx`                 # Main app: XR store, Canvas setup, Physics, ParticleContainer, EntropyGrid, AR button
+`main.jsx`                # React entry: renders <App /> with StrictMode<br>
+`index.css`               # Global styles for layout and dark theme<br>
+`App.jsx`                 # Main app: XR store, Canvas setup, Physics, ParticleContainer, EntropyGrid, AR button<br>
 
-`EntropyGrid.jsx`     # Grid visualization and entropy calculation (uses gammaln for ln!)
-`ParticleContainer.jsx` # Particle spawning, RigidBody setup, position polling for entropy
+`EntropyGrid.jsx`     # Grid visualization and entropy calculation (uses gammaln for ln!)<br>
+`ParticleContainer.jsx` # Particle spawning, RigidBody setup, position polling for entropy<br>
 
 ---
 
@@ -55,8 +55,7 @@ $$ S = k \cdot \ln W $$
 Higher $W$ → higher entropy. The system naturally evolves toward states with maximum $W$.
 
 ### 3. Shannon Entropy (Used in Simulation)
-Since exact $W$ is computationally infeasible, we approximate using **spatial Shannon entropy**: <br>
-$$H = - \sum_{i} p_i \log_2 p_i$$
+Since exact $W$ is computationally infeasible, we approximate using **spatial Shannon entropy**: $$H = - \sum_{i} p_i \log_2 p_i$$
 - Grid divides space into cells.
 - $p_i$: fraction of red (or blue) particles in cell $i$.
 - Averaged over all cells → global entropy measure.
